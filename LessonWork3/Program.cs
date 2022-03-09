@@ -10,6 +10,14 @@ namespace LessonWork3
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите слово");
+            var word = Console.ReadLine();
+            var reverced = new StringBuilder();
+            for (var i = word.Length - 1; i >= 0; i--)
+                reverced.Append(word[i]);
+
+            Console.WriteLine(reverced);
+            Console.ReadLine();
         }
     }
 }
